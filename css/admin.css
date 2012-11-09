@@ -1,0 +1,7 @@
+#toplevel_page_track-everything .wp-menu-image a {padding:0;width:16px;height:16px;margin:8px 0 0 8px;background:url(../images/icon-sprites.png) 0 0 no-repeat}
+#toplevel_page_track-everything:hover .wp-menu-image a, #toplevel_page_track-everything.wp-menu-open .wp-menu-image a {background-position:-17px 0}
+#toplevel_page_track-everything .wp-menu-image a img {display:none}
+#icon-track-everything {background-image:url(../images/icon32.png)}
+#special-tracking .event {width:300px}
+#special-tracking .event label {display:inline-block;width:49%}
+.spread_the_word ul {list-style:square; margin-left:25px}
