@@ -13,7 +13,7 @@ Track Everything makes using Google Analytics on a WordPress site easy. Attatch 
 
 Track Everything makes event tracking simple. By default the plugin tracks form submissions, external links and emails. However, you can customize it to track nearly any common event using CSS selectors.
 
-The plugin allows users to label events or completely customize events’ `Category`, `Action` , and `Label` [as allowed by Analytics](https://developers.google.com/analytics/devguides/collection/gajs/eventTrackerGuide#Anatomy).
+The plugin allows users to label events or completely customize events' `Category`, `Action` , and `Label` [as allowed by Analytics](https://developers.google.com/analytics/devguides/collection/gajs/eventTrackerGuide#Anatomy).
 
 By using Google Analytics Event Tracking you can get a more detailed view of what users do on your site and track beyond what Google Analytics offers by default.
 
