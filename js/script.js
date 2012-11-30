@@ -53,11 +53,11 @@ jQuery(function ($){
 		$('a[href^="mailto:"]').on("click.jqte.jqtedefault keypress.jqte.jqtedefault", function (e) {
 			var eventLabel = $(this).attr("href").substring(7);
 
-			var eventInfo = ['_trackEvent', 'Link', 'Email', eventLabel, null, true];
+			var eventInfo = ['_trackEvent', 'Link', 'Email', eventLabel];
 			pushEvent(eventInfo);
 		});
 		if(window.trackeverything.settings.debug){
-			$('a[href^="mailto:"]').addClass("track-everything track-everything-default track-everything-outbound");
+			$('a[href^="mailto:"]').addClass("track-everything track-everything-default track-everything-email");
 		}
 	}
 	for (var i = window.trackeverything.special.length - 1; i >= 0; i--) {
