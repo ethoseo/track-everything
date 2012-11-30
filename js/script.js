@@ -1,7 +1,7 @@
 function calculateLabel ($obj, possibilities){
-	var possibilities = (typeof possibilities == 'object') ? a : ["te_name", "name", "title", "id"];
+	var possibilities = (typeof possibilities == 'object') ? possibilities : ["te_name", "name", "title", "id"];
 	var eventLabel = null;
-	for (var i = possibilities.length - 1; i >= 0; i--) {
+	for (var i = 0; i <= (possibilities.length - 1); i++) {
 		var possibility = $obj.attr(possibilities[i]);
 		if(possibility && possibility.length){
 			eventLabel = possibility;
