@@ -4,7 +4,7 @@ Plugin Name: Track Everything
 Plugin URI: http://www.ethoseo.com/tools/track-everything
 Description: A plugin capable of adding Google Analytics Event Tracking to <em>everything</em> on a website.
 Author: Ethoseo Internet Marketing
-Version: 1.0.1
+Version: 1.0.2
 Author URI: http://www.ethoseo.com/
 License: MIT License
 
@@ -35,13 +35,29 @@ function ethoseo_te_enqueue() {
 add_action('wp_enqueue_scripts', 'ethoseo_te_enqueue');
 
 // PRINT SETTINGS
+if((bool)get_option("ethoseo_te_infooter")){
+	add_action('wp_footer', 'ethoseo_te_print_options');
+}else{
+	add_action('wp_head', 'ethoseo_te_print_options');
+}
 
-add_action('wp_head', 'ethoseo_te_print_options');
 function ethoseo_te_print_options () {
 	global $ethoseo_te_version;
+	
+	// Change Special from "click" => on to 0 => "click"
+	$special = get_option("ethoseo_te_special");
+	foreach($special as $key => $value){
+		if($value['events']){
+			$special[$key]['events'] = array_keys($value['events']);
+		}else{
+			unset($special[$key]);
+		}
+	}
+	
+	// Create Options
 	$options = array(
 		"version" => $ethoseo_te_version,
-		"special" => get_option("ethoseo_te_special"),
+		"special" => $special,
 		"dictionary" => get_option("ethoseo_te_dictionary"),
 		"settings" => array(
 			"forms" => (bool)get_option("ethoseo_te_trackforms"),

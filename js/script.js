@@ -68,7 +68,7 @@ jQuery(function ($){
 		}
 		var events = [];
 		for (var j = $special.events.length - 1; j >= 0; j--) {
-			events = $special.events[j] + ".jqte.jqtespecial";
+			events.push($special.events[j] + ".jqte.jqtespecial");
 		}
 		$($special.selector).on(events.join(" "), function () {
 			if($special.name.length){
