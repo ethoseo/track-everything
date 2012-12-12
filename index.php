@@ -156,48 +156,48 @@ Nick of Ethoseo Internet Marketing
 		<p>By default Track Eveything tracks <em>everything</em>. You can toggle this default functionality.</p>
 		<table class="form-table" style="clear: left; width: auto;">
 			<tr valign="top">
-				<th scope="row"><label for="trackforms">Track Form Submissions</label></th>
+				<th scope="row"><label for="trackforms" id="trackformslabel">Track Form Submissions</label></th>
 				<td>
-					<input name="trackforms" type="checkbox" id="trackforms" value="true" <?php echo get_option("ethoseo_te_trackforms") ? 'checked="checked"' : ""; ?>/>
-					<span class="description">This will trigger an Event any time a form is submitted.</span>
+					<input name="trackforms" type="checkbox" id="trackforms" aria-labelledby="trackformslabel" value="true" <?php echo get_option("ethoseo_te_trackforms") ? 'checked="checked"' : ""; ?>/>
+					<label for="trackforms" class="description">This will trigger an Event any time a form is submitted.</label>
 				</td>
 			</tr>
 			<tr valign="top">
-				<th scope="row"><label for="tracksearchforms">Track Search Form Submissions</label></th>
+				<th scope="row"><label for="tracksearchforms" id="tracksearchformslabel">Track Search Form Submissions</label></th>
 				<td>
-					<input name="tracksearchforms" type="checkbox" id="tracksearchforms" value="true" <?php echo get_option("ethoseo_te_tracksearchforms") ? 'checked="checked"' : ""; ?>/>
-					<span class="description">Unless this is checked search forms are not tracked.</span>
+					<input name="tracksearchforms" type="checkbox" id="tracksearchforms" aria-labelledby="tracksearchforms" value="true" <?php echo get_option("ethoseo_te_tracksearchforms") ? 'checked="checked"' : ""; ?>/>
+					<label for="tracksearchforms" class="description">Unless this is checked search forms are not tracked.</label>
 				</td>
 			</tr>
 			<tr valign="top">
-				<th scope="row"><label for="trackoutbound">Track Outbound Links</label></th>
+				<th scope="row"><label for="trackoutbound" id="trackoutboundlabel">Track Outbound Links</label></th>
 				<td>
-					<input name="trackoutbound" type="checkbox" id="trackoutbound" value="true" <?php echo get_option("ethoseo_te_trackoutbound") ? 'checked="checked"' : ""; ?>/>
-					<span class="description">This will trigger an Event any time an outbound link is triggered. <em>(These will be counted as non-interactions)</em></span>
+					<input name="trackoutbound" type="checkbox" id="trackoutbound" aria-labelledby="trackoutboundlabel" value="true" <?php echo get_option("ethoseo_te_trackoutbound") ? 'checked="checked"' : ""; ?>/>
+					<label for="trackoutbound" class="description">This will trigger an Event any time an outbound link is triggered. <em>(These will be counted as non-interactions)</em></label>
 				</td>
 			</tr>
 			<tr valign="top">
-				<th scope="row"><label for="trackemail">Track Email Links</label></th>
+				<th scope="row"><label for="trackemail" id="trackemaillabel">Track Email Links</label></th>
 				<td>
-					<input name="trackemail" type="checkbox" id="trackemail" value="true" <?php echo get_option("ethoseo_te_trackemail") ? 'checked="checked"' : ""; ?>/>
-					<span class="description">This will trigger an Event any time a <code>mailto:</code> is triggered.</span>
+					<input name="trackemail" type="checkbox" id="trackemail" aria-labelledby="trackemaillabel" value="true" <?php echo get_option("ethoseo_te_trackemail") ? 'checked="checked"' : ""; ?>/>
+					<label for="trackemail" class="description">This will trigger an Event any time a <code>mailto:</code> is triggered.</label>
 				</td>
 			</tr>
 		</table>
 		<h3>Advanced</h3>
 		<table class="form-table" style="clear: left; width: auto;">
 			<tr valign="top">
-				<th scope="row"><label for="infooter">Place in Footer</label></th>
+				<th scope="row"><label for="infooter" id="infooterlabel">Place in Footer</label></th>
 				<td>
-					<input name="infooter" type="checkbox" id="infooter" value="true" <?php echo get_option("ethoseo_te_infooter") ? 'checked="checked"' : ""; ?>/>
-					<span class="description">If things are going wrong with your site try enabling this.</span>
+					<input name="infooter" type="checkbox" id="infooter" aria-labelledby="infooterlabel" value="true" <?php echo get_option("ethoseo_te_infooter") ? 'checked="checked"' : ""; ?>/>
+					<label for="infooter" class="description">If things are going wrong with your site try enabling this.</label>
 				</td>
 			</tr>
 			<tr valign="top">
-				<th scope="row"><label for="debug">Debug</label></th>
+				<th scope="row"><label for="debug" id="debuglabel">Debug</label></th>
 				<td>
-					<input name="debug" type="checkbox" id="debug" value="true" <?php echo get_option("ethoseo_te_debug") ? 'checked="checked"' : ""; ?>/>
-					<span class="description">Debug makes Track Everything louder, it will <code>console.log</code> and add classes.</span>
+					<input name="debug" type="checkbox" id="debug" aria-labelledby="debuglabel" value="true" <?php echo get_option("ethoseo_te_debug") ? 'checked="checked"' : ""; ?>/>
+					<label for="debug" class="description">Debug makes Track Everything louder, it will <code>console.log</code> and add classes.</label>
 				</td>
 			</tr>
 		</table>
