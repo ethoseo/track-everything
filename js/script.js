@@ -1,4 +1,4 @@
-function calculateLabel ($obj, possibilities){
+function ethoseoteCalculateLabel ($obj, possibilities){
 	var possibilities = (typeof possibilities == 'object') ? possibilities : ["te_name", "name", "title", "id"];
 	var eventLabel = null;
 	for (var i = 0; i <= (possibilities.length - 1); i++) {
@@ -10,7 +10,7 @@ function calculateLabel ($obj, possibilities){
 	}
 	return eventLabel;
 }
-function pushEvent ( eventInfo ) {
+function ethoseotePushEvent ( eventInfo ) {
 	if(window.trackeverything.settings.debug){ console.log(eventInfo); }
 	_gaq.push(eventInfo);
 }
@@ -24,14 +24,14 @@ jQuery(function ($){
 	}
 	if(window.trackeverything.settings.forms){
 		$("form").on("submit.jqte.jqtedefault", function (e) {
-			var formLabel = calculateLabel($(this));
+			var formLabel = ethoseoteCalculateLabel($(this));
 
 			var eventInfo = ['_trackEvent', 'Form', 'Submission'];
 			if(formLabel != null){
 				eventInfo.push(formLabel);
 			}
 			if(!(window.trackeverything.settings.search == false && $(this).attr("method") && $(this).attr("method").toLowerCase() == "get" && $(this).children("input[name=s]").length)){
-				pushEvent(eventInfo);
+				ethoseotePushEvent(eventInfo);
 			}
 		});
 		if(window.trackeverything.settings.debug){
@@ -40,10 +40,10 @@ jQuery(function ($){
 	}
 	if(window.trackeverything.settings.outbound){
 		$("a:external").on("click.jqte.jqtedefault keypress.jqte.jqtedefault", function (e) {
-			var eventLabel = calculateLabel($(this), ["te_name", "href"]);
+			var eventLabel = ethoseoteCalculateLabel($(this), ["te_name", "href"]);
 
 			var eventInfo = ['_trackEvent', 'Link', 'Outbound', eventLabel, null, true];
-			pushEvent(eventInfo);
+			ethoseotePushEvent(eventInfo);
 		});
 		if(window.trackeverything.settings.debug){
 			$("a:external").addClass("track-everything track-everything-default track-everything-outbound");
@@ -54,7 +54,7 @@ jQuery(function ($){
 			var eventLabel = $(this).attr("href").substring(7);
 
 			var eventInfo = ['_trackEvent', 'Link', 'Email', eventLabel];
-			pushEvent(eventInfo);
+			ethoseotePushEvent(eventInfo);
 		});
 		if(window.trackeverything.settings.debug){
 			$('a[href^="mailto:"]').addClass("track-everything track-everything-default track-everything-email");
@@ -74,10 +74,10 @@ jQuery(function ($){
 			if($special.name.length){
 				$(this).attr("te_oname", $special.name);
 			}
-			var eventLabel = calculateLabel($(this), ["te_oname", "te_name", "name", "title", "id", "href"]);
+			var eventLabel = ethoseoteCalculateLabel($(this), ["te_oname", "te_name", "name", "title", "id", "href"]);
 			var eventInfo = ['_trackEvent', $special.category, $special.action, eventLabel];
 			
-			pushEvent(eventInfo);
+			ethoseotePushEvent(eventInfo);
 		});
 	};
 });
