@@ -81,6 +81,7 @@ A CSS selector is a way of referencing a specific object on a page. To find it w
 * The intial release.
 
 ## Upgrade Notice ##
+
 ### 1.1.0 ###
 Version 1.1.0 provides users with a better experience. Better explanations galore, better code, and bug fixes are all included.
 
