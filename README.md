@@ -1,4 +1,4 @@
-# Plugin Name #
+# Track Everything #
 **Contributors:** [ethoseo](http://profiles.wordpress.org/ethoseo), [nquinlan](http://profiles.wordpress.org/nquinlan)
   
 **Tags:** analytics, google analytics, tracking, event tracking, link tracking, email tracking, form submissions
@@ -65,6 +65,11 @@ A CSS selector is a way of referencing a specific object on a page. To find it w
 
 ## Changelog ##
 
+### 1.1.0 ###
+* Focus on UX improvements
+* Major Re-Work of Plugin Structure
+* Misc Bug Fixes
+
 ### 1.0.2 ###
 * Fixes to Specific Events
 * Fixes to code in Footer
@@ -76,6 +81,8 @@ A CSS selector is a way of referencing a specific object on a page. To find it w
 * The intial release.
 
 ## Upgrade Notice ##
+### 1.1.0 ###
+Version 1.1.0 provides users with a better experience. Better explanations galore, better code, and bug fixes are all included.
 
 ### 1.0.2 ###
 This version allows for more accurate tracking of Specific Events and contains various bug fixes and improvements.
