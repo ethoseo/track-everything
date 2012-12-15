@@ -4,7 +4,7 @@ if($_POST['hide']){
 }
 ?>
 <div style="float: right; width: 300px;">
-	<a href="http://www.ethoseo.com/?utm_campaign=WordPress-Plugins&utm_medium=inplugin&utm_source=Track-Everything"><img src="<?php echo plugins_url('/images/pluginby.png', __FILE__); ?>" alt="Plugin By Ethoseo" /></a>
+	<a href="http://www.ethoseo.com/?utm_campaign=WordPress-Plugins&utm_medium=inplugin&utm_source=Track-Everything"><img src="<?php echo plugins_url('/images/pluginby.png', ETHOSEO_TE_FILE); ?>" alt="Plugin By Ethoseo" /></a>
 <?php
 if(!get_option("ethoseo_hide_ethoseo")){
 ?>
