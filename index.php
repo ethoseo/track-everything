@@ -102,6 +102,7 @@ function ethoseo_te_create_menu() {
 	$ethoseo_te_options_page = add_menu_page('Track Everything Settings', 'Track Everything', 'activate_plugins', 'track-everything', 'ethoseo_te_settings_page', plugins_url('images/icon.png', __FILE__) );
 	$ethoseo_te_special_page = add_submenu_page('track-everything', 'Track Everything > Specific Tracking', 'Specific Events', 'activate_plugins', 'track-everything/specific', 'ethoseo_te_special_page');
 	$ethoseo_te_dictionary_page = add_submenu_page('track-everything', 'Track Everything > Labels', 'Tracking Labels', 'activate_plugins', 'track-everything/labels', 'ethoseo_te_dictionary_page');
+	$ethoseo_te_help_page = add_submenu_page('track-everything', 'Track Everything > Help', 'Help', 'activate_plugins', 'track-everything/help', 'ethoseo_te_help_page');
 }
 
 add_action( 'admin_enqueue_scripts', 'ethoseo_te_admin_enque' );
@@ -139,6 +140,10 @@ function ethoseo_te_special_page() {
 
 function ethoseo_te_dictionary_page() {
 	ethoseo_te_page('dictionary');
+}
+
+function ethoseo_te_help_page() {
+	ethoseo_te_page('help');
 }
 
 ?>
