@@ -1,11 +1,18 @@
 # Plugin Name #
-**Contributors:** ethoseo, nquinlan  
-**Tags:** analytics, google analytics, tracking, event tracking, link tracking, email tracking, form submissions  
-**Requires at least:** 3.0.1  
-**Tested up to:** 3.4.2  
-**Stable tag:** 1.0.2  
-**License:** MIT  
-**License URI:** http://opensource.org/licenses/MIT  
+**Contributors:** [ethoseo](http://profiles.wordpress.org/ethoseo), [nquinlan](http://profiles.wordpress.org/nquinlan)
+  
+**Tags:** analytics, google analytics, tracking, event tracking, link tracking, email tracking, form submissions
+  
+**Requires at least:** 3.0.1
+  
+**Tested up to:** 3.4.2
+  
+**Stable tag:** 1.1.0
+  
+**License:** MIT
+  
+**License URI:** http://opensource.org/licenses/MIT
+  
 
 Track Everything makes using Google Analytics on a WordPress site easy. Attatch tracking to forms, links, or any CSS selector.
 
@@ -32,7 +39,7 @@ By default form submissions, clicks on external links and clicks on email links 
 To track something enter its CSS (_or jQuery_) selector; `Category`, `Action` , and `Label`; and the select the event you want to track.
 
 ### What is a CSS selector and how do I find it?  ###
-A CSS selector is a way of referencing a specific object on a page. To find it we reccomend you use [Selector Gadget](http://www.selectorgadget.com/)
+A CSS selector is a way of referencing a specific object on a page. To find it we recommend you use [Selector Gadget](http://www.selectorgadget.com/).
 
 ### What are `Category`, `Action` , and `Label`?  ###
 `Category`, `Action` , and `Label` are all ways to [define events in Google Analytics](https://developers.google.com/analytics/devguides/collection/gajs/eventTrackerGuide#Anatomy). 
@@ -40,14 +47,20 @@ A CSS selector is a way of referencing a specific object on a page. To find it w
 
 ## Screenshots ##
 
-###1. The Track Everything Settings Screen###
-![The Track Everything Settings Screen](http://s.wordpress.org/extend/plugins/plugin-name/screenshot-1.png)
+###1. The Track Everything Settings Screen
+###
+![The Track Everything Settings Screen
+](http://s-plugins.wordpress.org/track-everything/assets/screenshot-1.png?rev=625290)
 
-###2. The "Specific" tracking interface###
-![The "Specific" tracking interface](http://s.wordpress.org/extend/plugins/plugin-name/screenshot-2.png)
+###2. The "Specific" tracking interface
+###
+![The "Specific" tracking interface
+](http://s-plugins.wordpress.org/track-everything/assets/screenshot-2.png?rev=625290)
 
-###3. The "Nameing" interface###
-![The "Nameing" interface](http://s.wordpress.org/extend/plugins/plugin-name/screenshot-3.png)
+###3. The "Nameing" interface
+###
+![The "Nameing" interface
+](http://s-plugins.wordpress.org/track-everything/assets/screenshot-3.png?rev=625290)
 
 
 ## Changelog ##
