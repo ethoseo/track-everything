@@ -7,7 +7,7 @@
   
 **Tested up to:** 3.4.2
   
-**Stable tag:** 1.1.0
+**Stable tag:** 1.1.1
   
 **License:** MIT
   
@@ -65,6 +65,9 @@ A CSS selector is a way of referencing a specific object on a page. To find it w
 
 ## Changelog ##
 
+### 1.1.1 ###
+* Introduced the ability to track Google Rank
+
 ### 1.1.0 ###
 * Focus on UX improvements
 * Major Re-Work of Plugin Structure
@@ -81,6 +84,9 @@ A CSS selector is a way of referencing a specific object on a page. To find it w
 * The intial release.
 
 ## Upgrade Notice ##
+
+### 1.1.1 ###
+Track Everything can now track Google Rank!
 
 ### 1.1.0 ###
 Version 1.1.0 provides users with a better experience. Better explanations galore, better code, and bug fixes are all included.

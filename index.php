@@ -4,7 +4,7 @@ Plugin Name: Track Everything
 Plugin URI: http://www.ethoseo.com/tools/track-everything
 Description: A plugin capable of adding Google Analytics Event Tracking to <em>everything</em> on a website.
 Author: Ethoseo Internet Marketing
-Version: 1.1.0
+Version: 1.1.1
 Author URI: http://www.ethoseo.com/
 License: MIT License
 
@@ -66,6 +66,7 @@ function ethoseo_te_print_options () {
 			"outbound" => (bool)get_option("ethoseo_te_trackoutbound"),
 			"search" => (bool)get_option("ethoseo_te_tracksearchforms"),
 			"email" => (bool)get_option("ethoseo_te_trackemail"),
+			"googlerank" => (bool)get_option("ethoseo_te_trackgooglerank"),
 			"debug" => (bool)get_option("ethoseo_te_debug"),
 		)
 	);
@@ -88,6 +89,7 @@ function ethoseo_te_activate() {
 		update_option("ethoseo_te_trackoutbound", true);
 		update_option("ethoseo_te_tracksearchforms", false);
 		update_option("ethoseo_te_trackemail", true);
+		update_option("ethoseo_te_trackgooglerank", false);
 		update_option("ethoseo_te_infooter", false);
 		update_option("ethoseo_te_debug", false);
 	}
