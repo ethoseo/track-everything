@@ -14,25 +14,6 @@ function ethoseotePushEvent ( eventInfo ) {
 	if(window.trackeverything.settings.debug){ console.log(eventInfo); }
 	_gaq.push(eventInfo);
 }
-if(window.trackeverything.settings.googlerank){
-
-	if (document.referrer.match(/google\.com/gi) && document.referrer.match(/cd/gi)) {
-		var referrerInfo = document.referrer;
-		var r = referrerInfo.match(/cd=(.*?)&/);
-		var rank = parseInt(r[1]);
-		var kw = referrerInfo.match(/q=(.*?)&/);
-		
-		if (kw[1].length > 0) {
-			var keyword = decodeURI(kw[1]);
-		} else {
-			keyword = "(not provided)";
-		}
-
-		var path = document.location.pathname;
-		_gaq.push(['_trackEvent', 'Google Search', keyword, path, rank, true]);
-	}
-
-});
 jQuery(function ($){
 	$.expr[':'].external = function(obj){
 		return !obj.href.match(/^mailto:/) && !obj.href.match(/^#:/) && (obj.hostname.replace(/^www\./i, '') != document.location.hostname.replace(/^www\./i, ''));
@@ -99,4 +80,23 @@ jQuery(function ($){
 			ethoseotePushEvent(eventInfo);
 		});
 	};
+	if(window.trackeverything.settings.googlerank){
+
+		if (document.referrer.match(/google\.com/gi) && document.referrer.match(/cd/gi)) {
+			var referrerInfo = document.referrer;
+			var r = referrerInfo.match(/cd=(.*?)&/);
+			var rank = parseInt(r[1]);
+			var kw = referrerInfo.match(/q=(.*?)&/);
+			
+			if (kw[1].length > 0) {
+				var keyword = decodeURI(kw[1]);
+			} else {
+				keyword = "(not provided)";
+			}
+
+			var path = document.location.pathname;
+			_gaq.push(['_trackEvent', 'Google Search', keyword, path, rank, true]);
+		}
+
+	}
 });
