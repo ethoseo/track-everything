@@ -12,7 +12,25 @@ function ethoseoteCalculateLabel ($obj, possibilities){
 }
 function ethoseotePushEvent ( eventInfo ) {
 	if(window.trackeverything.settings.debug){ console.log(eventInfo); }
-	_gaq.push(eventInfo);
+	if(window.trackeverything.settings.universal){
+		var gauEventInfo = {
+			'hitType': 'event',
+			'eventCategory': eventInfo[1],
+			'eventAction': eventInfo[2]
+		};
+		if(eventInfo[3]){
+			gauEventInfo['eventLabel'] = eventInfo[3];
+		}
+		if(eventInfo[4]){
+			gauEventInfo['eventValue'] = eventInfo[4];
+		}
+		if(eventInfo[5]){
+			gauEventInfo['nonInteraction'] = Number(eventInfo[4]);
+		}
+		ga('send', gauEvent);
+	}else{
+		_gaq.push(eventInfo);
+	}
 }
 jQuery(function ($){
 	$.expr[':'].external = function(obj){

@@ -67,6 +67,7 @@ function ethoseo_te_print_options () {
 			"search" => (bool)get_option("ethoseo_te_tracksearchforms"),
 			"email" => (bool)get_option("ethoseo_te_trackemail"),
 			"googlerank" => (bool)get_option("ethoseo_te_trackgooglerank"),
+			"universal" => (bool)get_option("ethoseo_te_universal"),
 			"debug" => (bool)get_option("ethoseo_te_debug"),
 		)
 	);
@@ -90,6 +91,7 @@ function ethoseo_te_activate() {
 		update_option("ethoseo_te_tracksearchforms", false);
 		update_option("ethoseo_te_trackemail", true);
 		update_option("ethoseo_te_trackgooglerank", false);
+		update_option("ethoseo_te_universal", false);
 		update_option("ethoseo_te_infooter", false);
 		update_option("ethoseo_te_debug", false);
 	}

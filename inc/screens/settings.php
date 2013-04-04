@@ -23,6 +23,7 @@ Nick of Ethoseo Internet Marketing
 			update_option("ethoseo_te_trackemail", $_POST['trackemail']);
 			update_option("ethoseo_te_trackgooglerank", $_POST['trackgooglerank']);
 
+			update_option("ethoseo_te_universal", $_POST['universal']);
 			update_option("ethoseo_te_infooter", $_POST['infooter']);
 			update_option("ethoseo_te_debug", $_POST['debug']);
 
@@ -77,6 +78,13 @@ Nick of Ethoseo Internet Marketing
 				<td>
 					<input name="infooter" type="checkbox" id="infooter" aria-labelledby="infooterlabel" value="true" <?php echo get_option("ethoseo_te_infooter") ? 'checked="checked"' : ""; ?>/>
 					<label for="infooter" class="description">If things are going wrong with your site try enabling this.</label>
+				</td>
+			</tr>
+			<tr valign="top">
+				<th scope="row"><label for="universal" id="universallabel">Use GA Universal</label></th>
+				<td>
+					<input name="universal" type="checkbox" id="universal" aria-labelledby="universallabel" value="true" <?php echo get_option("ethoseo_te_universal") ? 'checked="checked"' : ""; ?>/>
+					<label for="universal" class="description">Only select this if you're using Google's new <code>Analytics.js</code> on your site.</label>
 				</td>
 			</tr>
 			<tr valign="top">

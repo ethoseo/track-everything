@@ -67,6 +67,8 @@ A CSS selector is a way of referencing a specific object on a page. To find it w
 
 ### 1.1.1 ###
 * Introduced the ability to track Google Rank
+* Added the ability to use Analytics.js rather than ga.js
+* Misc Bug Fixes
 
 ### 1.1.0 ###
 * Focus on UX improvements
@@ -86,7 +88,7 @@ A CSS selector is a way of referencing a specific object on a page. To find it w
 ## Upgrade Notice ##
 
 ### 1.1.1 ###
-Track Everything can now track Google Rank!
+Track Everything can now track Google Rank! It also allows for using Analytics.js if you're a really early adopter.
 
 ### 1.1.0 ###
 Version 1.1.0 provides users with a better experience. Better explanations galore, better code, and bug fixes are all included.
