@@ -24,6 +24,8 @@ The plugin allows users to label events or completely customize events' `Categor
 
 By using Google Analytics Event Tracking you can get a more detailed view of what users do on your site and track beyond what Google Analytics offers by default.
 
+WordPress Track Everything acts as a simple interface for [jQuery Track Everything](https://github.com/nquinlan/jquery-track-everything), allowing anyone to easily track events on their WordPress website.
+
 ## Installation ##
 
 1. Upload `track-everything/` to the `/wp-content/plugins/` directory
