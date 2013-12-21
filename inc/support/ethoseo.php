@@ -12,6 +12,9 @@ if(!get_option("ethoseo_hide_ethoseo")){
 		<p><a href="http://www.ethoseo.com/?utm_campaign=WordPress-Plugins&utm_medium=inplugin&utm_source=Track-Everything" style="font-weight:bold;">Ethoseo</a> is a premiere internet marketing company based in Bellingham, WA. We provide expert pay-per-click (PPC) management and SEO services.</p>
 		<p>If you're experiencing any trouble with Track Everything, want to to improve your analytics, or want to better your internet marketing efforts, please don't hesitate to <a href="http://www.ethoseo.com/contact-us/?utm_campaign=WordPress-Plugins&utm_medium=inplugin&utm_source=Track-Everything" style="font-weight:bold;">get in contact</a>.</p>
 	</div>
+	<div class="about_track_everything" style="border-top: 1px solid #dadada; margin-top: 10px;">
+		<p>WordPress Track Everything is a plugin to allow any WordPress user to easily use and modify <a href="https://github.com/nquinlan/jquery-track-everything">jQuery Track Everything</a> by <a href="http://nicholasquinlan.com/?utm_campaign=WordPress+Plugins&utm_medium=inplugin&utm_source=Track+Everything">Nicholas Quinlan</a>.</p>
+	</div>
 	<div class="spread_the_word" style="border-top: 1px solid #dadada; margin-top: 10px;">
 		<p>Thanks for using Track Everything. We've worked hard to make a great plugin and would appreciate it if you let others know about it.</p>
 		<h3>Spread The Word</h3>

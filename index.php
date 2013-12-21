@@ -27,6 +27,13 @@ function ethoseo_te_enqueue() {
 	$in_footer = (bool)get_option("ethoseo_te_infooter");
 	wp_enqueue_script(
 		'trackeverything',
+		plugins_url('js/jquery.track-everything.js', __FILE__),
+		array('jquery'),
+		"1.0.0",
+		$in_footer
+	);
+	wp_enqueue_script(
+		'trackeverythinghandler',
 		plugins_url('js/script.js', __FILE__),
 		array('jquery'),
 		$ethoseo_te_version,
