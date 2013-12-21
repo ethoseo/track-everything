@@ -7,7 +7,7 @@
   
 **Tested up to:** 3.4.2
   
-**Stable tag:** 1.1.1
+**Stable tag:** 2.0.0
   
 **License:** MIT
   
@@ -57,13 +57,17 @@ A CSS selector is a way of referencing a specific object on a page. To find it w
 ![The "Specific" tracking interface
 ](http://s-plugins.wordpress.org/track-everything/assets/screenshot-2.png?rev=625290)
 
-###3. The "Nameing" interface
+###3. The "Naming" interface
 ###
-![The "Nameing" interface
+![The "Naming" interface
 ](http://s-plugins.wordpress.org/track-everything/assets/screenshot-3.png?rev=625290)
 
 
 ## Changelog ##
+
+### 2.0.0 ###
+* General stability improvements
+* Changed Track Everything's script to a more sustainable jQuery module
 
 ### 1.1.1 ###
 * Introduced the ability to track Google Rank
@@ -83,9 +87,12 @@ A CSS selector is a way of referencing a specific object on a page. To find it w
 * Major Analytics Bug Fixes 
 
 ### 1.0 ###
-* The intial release.
+* The initial release.
 
 ## Upgrade Notice ##
+
+### 2.0.0 ###
+This version brings general stability improvements, and fixes a bug around tracking multiple special events.
 
 ### 1.1.1 ###
 Track Everything can now track Google Rank! It also allows for using Analytics.js if you're a really early adopter.
