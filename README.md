@@ -14,7 +14,7 @@
 **License URI:** http://opensource.org/licenses/MIT
   
 
-Track Everything makes using Google Analytics on a WordPress site easy. Attatch tracking to forms, links, or any CSS selector.
+Track Everything makes using Google Analytics on a WordPress site easy. Attach tracking to forms, links, or any CSS selector.
 
 ## Description ##
 
