@@ -32,6 +32,16 @@ function ethoseotePushEvent ( eventInfo ) {
 		_gaq.push(eventInfo);
 	}
 }
+function listener($special, events){
+    $($special.selector).on(events.join(" "), function () {
+        if($special.name){
+            $(this).attr("te_oname", $special.name);
+        }
+        var eventLabel = ethoseoteCalculateLabel($(this), ["te_oname", "te_name", "name", "title", "id", "href"]);
+        var eventInfo = ['_trackEvent', $special.category, $special.action, eventLabel];
+        ethoseotePushEvent(eventInfo);
+    });
+}
 jQuery(function ($){
 	$.expr[':'].external = function(obj){
 		return !obj.href.match(/^mailto:/) && !obj.href.match(/^#:/) && (obj.hostname.replace(/^www\./i, '') != document.location.hostname.replace(/^www\./i, ''));
@@ -88,15 +98,7 @@ jQuery(function ($){
 		for (var j = $special.events.length - 1; j >= 0; j--) {
 			events.push($special.events[j] + ".jqte.jqtespecial");
 		}
-		$($special.selector).on(events.join(" "), function () {
-			if($special.name.length){
-				$(this).attr("te_oname", $special.name);
-			}
-			var eventLabel = ethoseoteCalculateLabel($(this), ["te_oname", "te_name", "name", "title", "id", "href"]);
-			var eventInfo = ['_trackEvent', $special.category, $special.action, eventLabel];
-			
-			ethoseotePushEvent(eventInfo);
-		});
+		listener($special, events);
 	};
 	if(window.trackeverything.settings.googlerank){
 
