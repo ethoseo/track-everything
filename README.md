@@ -1,4 +1,4 @@
-# Track Everything #
+# WordPress Track Everything #
 **Contributors:** [ethoseo](http://profiles.wordpress.org/ethoseo), [nquinlan](http://profiles.wordpress.org/nquinlan)
   
 **Tags:** analytics, google analytics, tracking, event tracking, link tracking, email tracking, form submissions
