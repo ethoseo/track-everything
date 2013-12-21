@@ -114,7 +114,7 @@ function ethoseo_te_admin_enque($hook) {
 	$hook_parts = explode("/",$hook);
 	global $ethoseo_te_version;
 	wp_enqueue_style('ethoseo_te_admin_css', plugins_url('css/admin.css', __FILE__), array(), $ethoseo_te_version, 'all');
-	if($hook_parts[1] == "specific" || $hook_parts[1] == "labels"){
+	if(count($hook_parts) > 1 && ($hook_parts[1] == "specific" || $hook_parts[1] == "labels")){
     	wp_enqueue_script('jquery-form-repeater', plugins_url('js/admin.js', __FILE__), array(), "0.1.0", 'all');
     }
     if($hook == "post-new.php" && $_GET['ethoseo-thanks-template'] == 1){

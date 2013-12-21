@@ -1,5 +1,5 @@
 <?php
-if($_POST['hide']){
+if(isset($_POST['hide']) && $_POST['hide']){
 	update_option("ethoseo_hide_ethoseo", true);
 }
 ?>

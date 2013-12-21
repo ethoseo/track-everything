@@ -16,7 +16,7 @@ Nick of Ethoseo Internet Marketing
 -->
 	<div id="icon-track-everything" class="icon32"><br /></div><h2>Track Everything</h2>
 	<?php
-		if($_POST['submit'] == "Save Changes"){
+		if(isset($_POST['submit']) && $_POST['submit'] == "Save Changes"){
 			update_option("ethoseo_te_trackforms", $_POST['trackforms']);
 			update_option("ethoseo_te_trackoutbound", $_POST['trackoutbound']);
 			update_option("ethoseo_te_tracksearchforms", $_POST['tracksearchforms']);
