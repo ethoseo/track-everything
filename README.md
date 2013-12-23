@@ -1,17 +1,14 @@
 # WordPress Track Everything #
-**Contributors:** [ethoseo](http://profiles.wordpress.org/ethoseo), [nquinlan](http://profiles.wordpress.org/nquinlan)
-  
-**Tags:** analytics, google analytics, tracking, event tracking, link tracking, email tracking, form submissions
-  
-**Requires at least:** 3.0.1
-  
-**Tested up to:** 3.4.2
-  
-**Stable tag:** 2.0.0
-  
-**License:** MIT
-  
-**License URI:** http://opensource.org/licenses/MIT
+
+| Name              | Description |
+|:-----------------:|:----------- |
+| Contributors      | [ethoseo](http://profiles.wordpress.org/ethoseo), [nquinlan](http://profiles.wordpress.org/nquinlan) |
+| Tags              | analytics, google analytics, tracking, event tracking, link tracking, email tracking, form submissions |
+| Requires at least | 3.0.1 |
+| Tested up to      | 3.4.2 |
+| Stable tag        | 2.0.0 |
+| License           | MIT |
+| License URI       | http://opensource.org/licenses/MIT |
   
 
 Track Everything makes using Google Analytics on a WordPress site easy. Attach tracking to forms, links, or any CSS selector. **[Available on the WordPress Plugin Repository](http://wordpress.org/plugins/track-everything/)**
